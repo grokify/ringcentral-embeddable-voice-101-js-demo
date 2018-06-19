@@ -1,0 +1,44 @@
+.chapter(data-title='RingCentral Embeddable Voice 101')
+  .step(data-title='Welcome!', data-file='tutorial/config.json')
+    h2 Welcome to RingCentral Embeddable Voice
+
+    p RingCentral Embeddable Voice is a unified communications web widget that can handle calls, conference calls, SMS for you. It allows you to embed it into your own web apps with two way integration, customization, and the ability to extend it's functionality.
+
+    p This tutorial will cover the basics of using and extending Embeddable Voice. Topics include:
+
+    * Embedding
+      * Click-to-Dial
+      * Inbound Screen-Pop
+    * Cutomization
+      * Custom CSS and Fonts
+    * Extensions
+      * Adding Conference Invites
+      * Adding More Contacts
+
+    p Advanced use cases such as creating Salesforce Open CTI widgets along with Java and Linux desktop apps are left to other tutorials.
+
+    p Let's get started with the basics!
+
+  .step(data-title='Overview', data-file='tutorial/config.json')
+    :markdown
+      ## Basic Embed
+
+      p Let's take a look at a basic embed which involves simply adding the Embeddable Voice as a JavaScript include. This can be run as-is, but also includes several optional query parameters.
+
+      * `appKey`: This is the OAuth 2.0 client ID for your app.
+      * `appServer`: This the RingCentral API server.
+      * `redierctUri`: This is your apps Redirect URI.
+
+  .step(data-title='Step Two')
+    h2 Under Construction
+
+    p more tutorial to come.
+
+  //- Example: include markdown file
+    .step(data-title='Step Three', data-file='', data-highlight='')
+      include:markdown three.md
+
+  //- Example: include jade file (don't need file extension)
+    .step(data-title='Step Four', data-file='', data-highlight='')
+      include four
+
