@@ -11,9 +11,9 @@ Getting started tutorial for RingCentral Embeddable Voice.
 
 Covers:
 
-- Embedding
-- Click-to-Dial
-- Inbound Screen-Pop
-- Custom Themes
-- Adding Conference Invites
-- Adding More Contacts
+- [Embedding](https://ringcentral-tutorials.github.io/ringcentral-embeddable-voice-js-quickstart/#1)
+- [Click-to-Dial](https://ringcentral-tutorials.github.io/ringcentral-embeddable-voice-js-quickstart/#2)
+- [Inbound Screen-Pop](https://ringcentral-tutorials.github.io/ringcentral-embeddable-voice-js-quickstart/#3)
+- [Custom Themes](https://ringcentral-tutorials.github.io/ringcentral-embeddable-voice-js-quickstart/#7)
+- [Adding Conference Invites](https://ringcentral-tutorials.github.io/ringcentral-embeddable-voice-js-quickstart/#11)
+- [Adding More Contacts](https://ringcentral-tutorials.github.io/ringcentral-embeddable-voice-js-quickstart/#14)
