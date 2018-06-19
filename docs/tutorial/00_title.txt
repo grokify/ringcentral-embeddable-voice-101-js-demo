@@ -14,4 +14,4 @@ Website: https://developer.ringcentral.com/embeddable-voice.html
 
 Repo: https://github.com/ringcentral/ringcentral-embeddable-voice
 
-Tutorial: https://github.com/ringcentral-tutorials/ringcentral-embeddable-voice-101-js-demo
+Tutorial: https://ringcentral-tutorials.github.io/ringcentral-embeddable-voice-101-js-demo/
