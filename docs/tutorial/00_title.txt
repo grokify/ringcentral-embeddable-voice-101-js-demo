@@ -9,3 +9,9 @@
 . | |/ / _ \/ / __/ -_)
 . |___/\___/_/\__/\__/ 
                       
+
+Website: https://developer.ringcentral.com/embeddable-voice.html
+
+Repo: https://github.com/ringcentral/ringcentral-embeddable-voice
+
+Tutorial: https://github.com/ringcentral-tutorials/ringcentral-embeddable-voice-101-demo

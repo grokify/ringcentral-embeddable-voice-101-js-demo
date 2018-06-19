@@ -44,6 +44,15 @@
     }, '*');
   }
 
+  function inviteConference(request) {
+    var calendarUrl = buildO365CalendarUrl({
+      'subject':'New Conference',
+      'body': request.body.conference.inviteText});
+    window.open(calendarUrl);
+
+    responseMessage(request, { data: 'ok' });
+  }
+
   function buildO365CalendarUrl(params={}) {
     var calendarUrl = 'https://outlook.office.com/owa/?path=/calendar/action/compose';
     var encoded = [];
@@ -57,15 +66,6 @@
       calendarUrl = calendarUrl + '&' + encoded.join('&');
     }
     return calendarUrl;
-  }
-
-  function inviteConference(request) {
-    var calendarUrl = buildO365CalendarUrl({
-      'subject':'New Conference',
-      'body': request.body.conference.inviteText});
-    window.open(calendarUrl);
-
-    responseMessage(request, { data: 'ok' });
   }
 
   function getContacts(request) {
