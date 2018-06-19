@@ -1,7 +1,6 @@
 # RingCentral Embeddable Voice 101
 
 [![License][license-svg]][license-link]
-[![Stack Overflow][stackoverflow-svg]][stackoverflow-url]
 
  [license-svg]: https://img.shields.io/badge/license-MIT-blue.svg
  [license-link]: https://github.com/grokify/gotilla/blob/master/LICENSE
