@@ -9,6 +9,8 @@
 
 Getting started tutorial for RingCentral Embeddable Voice.
 
+View Tutorial: https://ringcentral-tutorials.github.io/ringcentral-embeddable-voice-js-quickstart/
+
 Covers:
 
 - [Embedding](https://ringcentral-tutorials.github.io/ringcentral-embeddable-voice-js-quickstart/#1)
