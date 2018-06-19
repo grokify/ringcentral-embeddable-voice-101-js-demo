@@ -1,44 +1,195 @@
 .chapter(data-title='RingCentral Embeddable Voice 101')
-  .step(data-title='Welcome!', data-file='tutorial/config.json')
-    h2 Welcome to RingCentral Embeddable Voice
-
-    p RingCentral Embeddable Voice is a unified communications web widget that can handle calls, conference calls, SMS for you. It allows you to embed it into your own web apps with two way integration, customization, and the ability to extend it's functionality.
-
-    p This tutorial will cover the basics of using and extending Embeddable Voice. Topics include:
-
-    * Embedding
-      * Click-to-Dial
-      * Inbound Screen-Pop
-    * Cutomization
-      * Custom CSS and Fonts
-    * Extensions
-      * Adding Conference Invites
-      * Adding More Contacts
-
-    p Advanced use cases such as creating Salesforce Open CTI widgets along with Java and Linux desktop apps are left to other tutorials.
-
-    p Let's get started with the basics!
-
-  .step(data-title='Overview', data-file='tutorial/config.json')
+  .step(data-title='1. Overview', data-file='tutorial/00_title.txt')
     :markdown
-      ## Basic Embed
+      ## Welcome to RingCentral Embeddable Voice
 
-      p Let's take a look at a basic embed which involves simply adding the Embeddable Voice as a JavaScript include. This can be run as-is, but also includes several optional query parameters.
+      RingCentral Embeddable Voice is a unified communications web widget that can handle
 
-      * `appKey`: This is the OAuth 2.0 client ID for your app.
-      * `appServer`: This the RingCentral API server.
-      * `redierctUri`: This is your apps Redirect URI.
+      - Voice
+      - Conference calls
+      - SMS
 
-  .step(data-title='Step Two')
-    h2 Under Construction
+      It allows you to embed it into your own web apps with two way integration, customization, and the ability to extend it's functionality.
 
-    p more tutorial to come.
+      This tutorial will cover using and extending Embeddable Voice including:
 
-  //- Example: include markdown file
-    .step(data-title='Step Three', data-file='', data-highlight='')
-      include:markdown three.md
+      - Embedding
+      - Click-to-Dial
+      - Inbound Screen-Pop
+      - Custom Themes
+      - Adding Conference Invites
+      - Adding More Contacts
 
-  //- Example: include jade file (don't need file extension)
-    .step(data-title='Step Four', data-file='', data-highlight='')
-      include four
+      Advanced use cases such as creating Salesforce Open CTI widgets along with Java and Linux desktop apps are left to other tutorials.
 
+      Let's get started with the basics!
+
+  .step(data-title='2. Embedding', data-file='tutorial/01_embed.html', data-highlight='10-17')
+    :markdown
+      ## Embedding
+
+      Let's take a look at a basic embed which involves simply adding the Embeddable Voice as a JavaScript include. This can be run as-is, but also includes several optional query parameters.
+
+      ◆ `appKey`: This is the OAuth 2.0 client ID for your app.
+
+      ◆ `appServer`: This the RingCentral API server.
+
+      ◆ `redierctUri`: This is your apps Redirect URI.
+
+      Demo URL: https://ringcentral.github.io/ringcentral-embeddable-voice/
+
+  .step(data-title='3. Click-to-Dial', data-file='tutorial/01_embed.html', data-highlight='20-21')
+    :markdown
+      ## Click-to-Dial
+
+      Click-to-Dial can be automatically enabled when the widget is loaded
+
+      ◆ `tel`: Telephone call via [RFC 3966](https://tools.ietf.org/html/rfc3966)
+
+      ◆ `sms`: Text via [RFC 5724](https://tools.ietf.org/html/rfc5724)
+
+      Demo URL: https://ringcentral.github.io/ringcentral-embeddable-voice/
+
+  .step(data-title='4. Inbound Screen-Pop - Add Listener', data-file='tutorial/static_crm/code/ringcentral.js', data-highlight='15-19')
+    :markdown
+      ## Inbound Screen-Pop - 1 of 3
+
+      Inbound Screen-Pop brings up information on the caller based on their caller id number.
+
+      ◆ Listen for `rc-call-ring-notify` event
+
+  .step(data-title='4. Inbound Screen-Pop - Get Contact for Number', data-file='tutorial/static_crm/code/ringcentral.js', data-highlight='20-22')
+    :markdown
+      ## Inbound Screen-Pop - 2 of 3
+
+      Inbound Screen-Pop brings up information on the caller based on their caller id number.
+
+      ◆ Listen for `rc-call-ring-notify` event
+
+      ◆ Get Contact for Number
+
+  .step(data-title='4. Inbound Screen-Pop - Load Contact Page', data-file='tutorial/static_crm/code/ringcentral.js', data-highlight='23-25')
+    :markdown
+      ## Inbound Screen-Pop - 3 of 3
+
+      Inbound Screen-Pop brings up information on the caller based on their caller id number.
+
+      ◆ Listen for `rc-call-ring-notify` event
+
+      ◆ Get Contact for Number
+
+      ◆ Load Contact Page
+
+  .step(data-title='4. Inbound Screen-Pop - Summary', data-file='tutorial/static_crm/code/ringcentral.js', data-highlight='13-33')
+    :markdown
+      ## Inbound Screen-Pop - 3 of 3
+
+      Inbound Screen-Pop brings up information on the caller based on their caller id number.
+
+      ◆ Listen for `rc-call-ring-notify` event
+
+      ◆ Get Contact for Number
+
+      ◆ Load Contact Page
+
+  .step(data-title='5. Custom Themes - CSS URL', data-file='tutorial/static_crm/code/ringcentral.js', data-highlight='4-5')
+    :markdown
+      ## Custom Theme - 1 of 3
+
+      ◆ Add a custom theme via the `styleUri` query parameter
+
+      Demo CSS: https://embbnux.github.io/ringcentral-web-widget-styles/GameofThrones/styles.css
+
+  .step(data-title='5. Custom Themes - CSS Font', data-file='tutorial/static_crm/code/assets/custom-theme.css', data-highlight='0-21')
+    :markdown
+      ## Custom Theme - 2 of 3
+
+      ◆ Add a custom theme via the `styleUri` query parameter
+
+      Demo CSS: https://embbnux.github.io/ringcentral-web-widget-styles/GameofThrones/styles.css
+
+      ◆ Custom fonts - Hint: use Transfonter.org
+
+      Demo Font: https://grokify.github.io/webfonts/game-of-thrones/
+
+  .step(data-title='5. Custom Themes - CSS Font Colors', data-file='tutorial/static_crm/code/assets/custom-theme.css', data-highlight='77-169')
+    :markdown
+      ## Custom Theme - 3 of 3
+
+      ◆ Add a custom theme via the `styleUri` query parameter
+
+      Demo CSS: https://embbnux.github.io/ringcentral-web-widget-styles/GameofThrones/styles.css
+
+      ◆ Custom fonts - Hint: use Transfonter.org
+
+      Demo Font: https://grokify.github.io/webfonts/game-of-thrones/
+
+      ◆ Custom colors
+
+  .step(data-title='6. Extensions - Overview', data-file='tutorial/03_extend.html', data-highlight='14-29')
+    :markdown
+      ## Extend - Interfaces
+
+      ◆ Scheduling conference call calendar events
+
+      ◆ Extending contacts
+
+      ◆ Handling activities
+
+  .step(data-title='6. Extensions - Overview', data-file='tutorial/03_extend.html', data-highlight='14-29')
+    :markdown
+      ## Extend - Interfaces
+
+      ◆ Scheduling conference call calendar events
+
+      ◆ Extending contacts
+
+      ◆ Handling activities
+
+  .step(data-title='7. Adding Conference Invites', data-file='tutorial/03_extend.html', data-highlight='41-43')
+    :markdown
+      ## Adding Conference Invites
+
+      Support more calendars
+
+  .step(data-title='7. Adding Conference Invites - Office 365', data-file='tutorial/03_extend_mod.html', data-highlight='27')
+    :markdown
+      ## Adding Conference Invites - Office 365
+
+      ◆ Customize button name
+
+  .step(data-title='7. Adding Conference Invites - Office 365', data-file='tutorial/03_extend_mod.html', data-highlight='47-73')
+    :markdown
+      ## Adding Conference Invites - Office 365
+
+      ◆ Customize button name
+
+      ◆ Add function to create Office 365 URL
+
+      ◆ Call function and open window when clicked
+
+  .step(data-title='8. Adding Contacts', data-file='tutorial/03_extend.html', data-highlight='45-57')
+    :markdown
+      ## Adding Contacts - Overview
+
+      ◆ Add list of contacts
+
+  .step(data-title='8. Adding Contacts - Demo', data-file='tutorial/03_extend_mod.html', data-highlight='71-75')
+    :markdown
+      ## Adding Conference Invites - Office 365
+
+      ◆ Add list of contacts
+
+      ◆ Customize list of contacts
+
+  .step(data-title='9. Summary', data-file='tutorial/00_title.txt')
+    :markdown
+      ## Summary
+
+      More Demos
+
+      ◆ Java Desktop App: https://github.com/tylerlong/jxbrowser-webrtc
+
+      ◆ Linux/Unix: https://github.com/embbnux/ringcentral-embeddable-voice-app
+
+      ◆ Chrome Extension: https://github.com/embbnux/ringcentral-embeddable-voice-extension

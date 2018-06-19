@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Embed Demo</title>
+  </head>
+  <body>
+    <h1>Embed Demo</h1>
+
+    <script>
+      (function() {
+        var rcs = document.createElement("script");
+        rcs.src = "https://ringcentral.github.io/ringcentral-embeddable-voice/adapter.js";
+        var rcs0 = document.getElementsByTagName("script")[0];
+        rcs0.parentNode.insertBefore(rcs, rcs0);
+      })();
+    </script>
+
+    <ul>
+      <li><a href="tel:+16505550100">Call (650) 555-0100</a></li>
+      <li><a href="sms:+16505550100">Text (650) 555-0100</a></li>
+    </ul>
+  </body>
+</html>
